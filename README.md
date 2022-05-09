@@ -25,7 +25,7 @@ https://disk.yandex.ru/d/DBZo6RiYm6vUUQ
 https://disk.yandex.com/d/qSCJM3Xh7DLWnQ  
 
 ###### Gradle
-Требуемая Android-ориентированная система сборки для вышеприведенных (версий) средств разработки - это Gradle 4.6.  
+Требуемая система сборки для вышеприведенных (версий) средств разработки - это Gradle 4.6.  
 Скачать:  
 https://disk.yandex.com/d/_8lEARjWqPQDNQ  
 
@@ -53,7 +53,7 @@ https://disk.yandex.ru/d/PyvQAsYXtZHK4g
 
 
 >Заметьте, что здесь только одна платформа 'Android SDK Platform 19'. Соответствия между версиями Android и Android API Level можно посмотреть здесь:  
->	https://apilevels.com/  
+>	&nbsp;&nbsp;&nbsp;&nbsp;https://apilevels.com/  
 >Установить требуемую платформу (например, 25) следует так:  
 >	&nbsp;&nbsp;&nbsp;&nbsp;cd ...\Sdk\cmdline-tools\latest\bin\  
 >	&nbsp;&nbsp;&nbsp;&nbsp;sdkmanager.bat --install "platforms;android-25"  
@@ -64,7 +64,7 @@ https://disk.yandex.ru/d/PyvQAsYXtZHK4g
 ​    
 #### Хост разработки
 
-1. Инсталлировать систему Qt 5.12.xx (qt-opensource-windows-x86-5.12.10.exe) с поддержкой разработки под Android (Android Kits) (android_armv7 etc.). Директория установки по умолчанию: C:\Qt\...  
+1. Инсталлировать систему Qt 5.12.xx (qt-opensource-windows-x86-5.12.10.exe) с поддержкой разработки под Android (Android Kits) (android_armv7 etc.).  
 2. Инсталлировать Qt Creator (qt-creator-opensource-windows-x86-4.13.3.exe) в любую директорию.  
 3. Инсталлировать JDK (jdk-8u291-windows-x64.exe) в директорию по умолчанию: C:\Program Files\Java\jdk1.8.0_291.  
 4. Перенести распакованную директорию AndroidSDK c хоста с Internet на хост разработки в директорию X:\AndroidSDK, (**где "Х" здесь и далее - целевой том**)  
@@ -92,7 +92,7 @@ https://disk.yandex.ru/d/PyvQAsYXtZHK4g
 	&nbsp;&nbsp;&nbsp;&nbsp;Компиляторы - Android Clang (C++,arm,NDK 21.1.6352462)  
 	&nbsp;&nbsp;&nbsp;&nbsp;Отладчики - Android Debugger (armeabi-v7a,NDK 21.1.6352462)  
 8. Создать новый проект под комплект Android типа android_armv7 (не эмуляция). Запустить сборку и убедиться, что проект *НЕ* собирается (и это исключительно по причине отсутствия Internet)  
-9. Перейдите в директорию сборки проекта (android-build). В файле   
+9. Перейте в директорию сборки проекта (android-build). В файле   
 	&nbsp;&nbsp;&nbsp;&nbsp;android-build/gradle/wrapper/gradle-wrapper.properties  
 	заменить значение:  
 	&nbsp;&nbsp;&nbsp;&nbsp;distributionUrl=gradle-4.6-bin.zip  
